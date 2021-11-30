@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  examplehardhat:
+    image: examplehardhat
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ".:/usr/src/app:rw"
+        #working_dir: /usr/src/app
